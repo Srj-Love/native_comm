@@ -16,6 +16,16 @@ jobs:
         with:
           flutter-version: '2.0.4'
       - run: flutter pub get
+      - run: flutter analyze .
+      - run: flutter build apk
+
+      # Upload debug main apk to the artifacts.
+      - uses: actions/upload-artifact@v1
+          with:
+            name: release-apk
+            path: build/app/outputs/apk/release/app-release.apk
+
+#      Create Release APK
       - run: flutter build apk -t lib/main.dart --split-per-abi
 #      - run: flutter build ios --release --no-codesign
       - name: Create a Release APK
