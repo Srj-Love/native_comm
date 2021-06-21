@@ -1,4 +1,5 @@
 # native_comm
+[![Test, Build and Release apk](https://github.com/Srj-Love/native_comm/actions/workflows/main.yml/badge.svg?branch=v1.52)](https://github.com/Srj-Love/native_comm/actions/workflows/main.yml)
 
 A new Flutter project.
 
