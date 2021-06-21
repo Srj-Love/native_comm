@@ -40,11 +40,9 @@ class HomeController extends GetxController {
       case "callMe":
         print('call callMe : arguments = ${call.arguments}');
         return Future.value('called from platform!');
-        break;
       default:
         print('Unknowm method ${call.method}');
         throw MissingPluginException();
-        break;
     }
   }
 
